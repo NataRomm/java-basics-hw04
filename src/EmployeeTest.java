@@ -13,22 +13,22 @@ public class EmployeeTest {
     assertEquals(employee1.getName(), "Petro", "The name is wrong for " + employee1);
 
     assertEquals(employee1.getSocialSecurityNumber(), "SSN123",
-        "The social security number is wrong for " + employee1);
+            "The social security number is wrong for " + employee1);
 
     assertEquals(employee1.getFixedMonthlyPayment(), 2500.0d,
-        "The fixed monthly payment name is wrong for " + employee1);
+            "The fixed monthly payment name is wrong for " + employee1);
 
     employee1.calculatePay();
 
     assertEquals(employee1.getAverageMonthlySalary(), 2500.0d,
-        "The average monthly salary is wrong for " + employee1);
+            "The average monthly salary is wrong for " + employee1);
 
     assertTrue(employee1.toString().contains("Petro"),
-        "toString method does not contains employee's name: " + employee1);
+            "toString method does not contains employee's name: " + employee1);
 
-    assertTrue(employee1.toString().contains("2500.00"),
-        "toString method does not contains employee's average monthly salary of 2500.00: "
-            + employee1);
+    assertTrue(employee1.toString().contains("2500.00"),     // need to ask
+            "toString method does not contains employee's average monthly salary of 2500.00: "
+                    + employee1);
   }
 
   @Test
